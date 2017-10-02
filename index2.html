@@ -249,9 +249,8 @@ var F1H_CUSTOM_KEY_VALUE = {KFID0:'DS_WEBKAN',KFID1:'DS_TOP'};
 		<div id="JSID_baseBreaking_normal" style="display:none;">
     <div class="cmn-breaking_news cmn-clearfix" style="">
         <div class="cmnc-title cmnc-level3 cmnc-type1">
-            <h2>
-                <span class="cmnc-time  JSID_time">1日 0:00更新</span>
-                <span class="cmnc-headline JSID_body">ブレイキングサンプル</span>
+            <h2 style="text-align:center;">
+                <span class="cmnc-headline JSID_body" style="text-align:center;">Congratulations!!</span>
             </h2>
         </div>
         <div class="cmnc-open" style="display: none;">
@@ -387,9 +386,8 @@ _nkconf.ID_BREAKINGNEWS.push([["JSID_baseBreaking_emergency",{"JSID_dataBreaking
 			<div id="JSID_baseBreaking_small" style="display:none;cursor:pointer;">
     <div class="cmn-breaking_news cmn-clearfix" style="">
         <div class="cmnc-title  cmnc-type1">
-            <h2>
-                <span class="cmnc-time  JSID_time">1日 0:00更新</span>
-                <span class="cmnc-headline JSID_body"><p style="padding:20px;font-size:48px;">aaaa</p></span>
+            <h2 style="text-align:center;">
+                <span class="cmnc-headline JSID_body" style="text-align:center;"><p style="padding:20px;font-size:42px;" class="breakinginside"></p></span>
             </h2>
         </div>
         <div class="cmnc-open" style="display: none;">
@@ -404,10 +402,10 @@ _nkconf.ID_BREAKINGNEWS.push([["JSID_baseBreaking_emergency",{"JSID_dataBreaking
 	<div class="nx-top_news_first cmn-clearfix">
 		<div class="cmn-article_title">
 		<h3 class="rythm-bass">
-			<a href="article1.html" class=""><span class="cmnc-large">井上家、松本家が経営統合</span></a></h3>
+			<a href="/article/DGXMZO21595840X20C17A9I00000/?dg=1&amp;nf=1" class=""><span class="cmnc-large">井上家、松本家が経営統合</span></a></h3>
 	</div><div class="cmn-photo_style1 cmn-position_right" style="width: 315px;">
-					<a href="article1.html" class=""><img src="IMG_1163.jpg" height="177" width="315" title="国内のＦＸ取引高は約５千兆円に上る一方、ＦＸ業者への規制は銀行などに比べ緩い" alt="国内のＦＸ取引高は約５千兆円に上る一方、ＦＸ業者への規制は銀行などに比べ緩い" /></a></div><div class="cmn-article_summary">
-		<p>　昨日、ブランドマーケティング本部コンテンツメディア部長の井上孝惠（たかえ）さん（？？）の婚約が内定したと発表した。お相手は３歳年下となるアサツー ディ・ケイ（ADK）の松本真悟（しんご）さん（３４）で、両家による事実上の経営統合となる。<a href="article1.html" class="">…続き</a><span class="cmnc-time">18:45</span>
+					<a href="/article/DGXMZO21595840X20C17A9I00000/?ap=1&amp;dg=1&amp;nf=1" class=""><img src="IMG_1163.jpg" height="177" width="315" title="国内のＦＸ取引高は約５千兆円に上る一方、ＦＸ業者への規制は銀行などに比べ緩い" alt="国内のＦＸ取引高は約５千兆円に上る一方、ＦＸ業者への規制は銀行などに比べ緩い" /></a></div><div class="cmn-article_summary">
+		<p>　昨日、ブランドマーケティング本部コンテンツメディア部長の井上孝惠（たかえ）さん（？？）の婚約が内定したと発表した。お相手は３歳年下となるアサツー ディ・ケイ（ADK）の松本真悟（しんご）さん（３４）で、両家による事実上の経営統合となる。<a href="/article/DGXMZO21595840X20C17A9I00000/?dg=1&amp;nf=1" class="">…続き</a><span class="cmnc-time">18:45</span>
 			<span class="m-wficon time_new"></span></p>
 	</div><div class="cmn-related_article cmn-clearfix">
 <h4 class="cmn-hide">関連記事</h4>
@@ -424,6 +422,41 @@ _nkconf.ID_BREAKINGNEWS.push([["JSID_baseBreaking_emergency",{"JSID_dataBreaking
 	</ul>
 </div>
 </div>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/rythm.js/2.2.0/rythm.min.js"></script>
+<script>
+$(function(){
+  $("#JSID_baseBreaking_small").slideDown("slow");
+  $(".breakinginside").html('Yes, I do?').on("click", function(e){
+    $(this).html('<s>Yes, I do</s>').on("click", function(e){
+      $(this).html('<s>Yes, I do.</s> -> Yes, I will.').on("click", function(e){
+        $(this).slideUp();
+        $("#JSID_baseBreaking_normal").slideDown("slow");
+
+        $(".cmn-breaking_news").addClass("pulse1");
+        $(".cmn-article_title h3").addClass("rythm-bass");
+        $(".cmn-article_summary").addClass("rythm-medium");
+        $(".cmnc-link_list").addClass("rythm-high");
+        $("#CONTENTS, body").addClass("body_color");
+
+        setTimeout(function(){
+          var rythm = new Rythm();
+          rythm.setMusic("/sample.mp3");
+          rythm.setGain(0.1);
+          rythm.start();
+          rythm.addRythm('body_color', 'color', 0, 10);
+          rythm.addRythm('pulse1', 'pulse', 0, 10);
+        },1500);
+
+      })
+
+    })
+
+  });
+
+
+})
+</script>
 
 	<div class="m-block prtextPremium a-mb16">
 				<ul id="ADVERTISE_PREMIUM_TEXT_TARGET" class="m-prtext">
