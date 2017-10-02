@@ -590,6 +590,39 @@ _nkconf.ID_BREAKINGNEWS.push([["JSID_baseBreaking_small",{"JSID_dataBreaking_Kij
 		</ul>
 </div>
 
+<div id="message" style="margin:auto;width:400px;text-align:center;background-color:#f7f7f7;border:1px solid #d5d5d5;padding:20px;margin-bottom:30px;" class="animated">
+<h6 style="font-size:20px;margin-bottom: 10px;">井上様へメッセージが届いています。</h6>
+<a href="" style="
+display: inline-block;
+padding: 0.5em 1em;
+text-decoration: none;
+background: #668ad8;/*ボタン色*/ color: #FFF;
+border-bottom: solid 4px #627295;
+border-radius: 3px;
+">いますぐ受け取る</a>
+</div>
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css" />
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.inview/1.0.0/jquery.inview.min.js"></script>
+<script>
+$(function(){
+	$('#message').on('inview', function(event, isInView) {
+		console.log(event, isInView);
+		if (isInView) {
+		//表示領域に入った時
+			$(this).addClass('fadeInRight');
+		} else {
+		//表示領域から出た時
+			$(this).removeClass('fadeInRight');
+			$(this).css('opacity',0); //非表示にしておく
+		}
+	});
+
+});
+
+</script>
+
+
 <div class="save-pulldown">
 			<div class="bs-pulldown cmn-clearfix" id="JSID_formKIJIToolBottom_unauthsave" style="display: none;">
 				<p class="info">記事保存</p>
