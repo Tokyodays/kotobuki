@@ -249,9 +249,8 @@ var F1H_CUSTOM_KEY_VALUE = {KFID0:'DS_WEBKAN',KFID1:'DS_TOP'};
 		<div id="JSID_baseBreaking_normal" style="display:none;">
     <div class="cmn-breaking_news cmn-clearfix" style="">
         <div class="cmnc-title cmnc-level3 cmnc-type1">
-            <h2>
-                <span class="cmnc-time  JSID_time">1日 0:00更新</span>
-                <span class="cmnc-headline JSID_body">ブレイキングサンプル</span>
+            <h2 style="text-align:center;">
+                <span class="cmnc-headline JSID_body" style="text-align:center;">Congratulations!!</span>
             </h2>
         </div>
         <div class="cmnc-open" style="display: none;">
@@ -387,9 +386,8 @@ _nkconf.ID_BREAKINGNEWS.push([["JSID_baseBreaking_emergency",{"JSID_dataBreaking
 			<div id="JSID_baseBreaking_small" style="display:none;cursor:pointer;">
     <div class="cmn-breaking_news cmn-clearfix" style="">
         <div class="cmnc-title  cmnc-type1">
-            <h2>
-                <span class="cmnc-time  JSID_time">1日 0:00更新</span>
-                <span class="cmnc-headline JSID_body"><p style="padding:20px;font-size:48px;">aaaa</p></span>
+            <h2 style="text-align:center;">
+                <span class="cmnc-headline JSID_body" style="text-align:center;"><p style="padding:20px;font-size:42px;"><s>Yes, I do.</s> -> Yes, I will.</p></span>
             </h2>
         </div>
         <div class="cmnc-open" style="display: none;">
@@ -442,7 +440,7 @@ $(function(){
       var rythm = new Rythm();
       rythm.setMusic("/sample.mp3");
       rythm.setGain(0.1);
-      //rythm.start();
+      rythm.start();
       rythm.addRythm('body_color', 'color', 0, 10);
       rythm.addRythm('pulse1', 'pulse', 0, 10);
     },1500);
