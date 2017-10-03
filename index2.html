@@ -387,7 +387,7 @@ _nkconf.ID_BREAKINGNEWS.push([["JSID_baseBreaking_emergency",{"JSID_dataBreaking
     <div class="cmn-breaking_news cmn-clearfix" style="">
         <div class="cmnc-title  cmnc-type1">
             <h2 style="text-align:center;">
-                <span class="cmnc-headline JSID_body" style="text-align:center;"><p style="padding:20px;font-size:42px;"><s>Yes, I do.</s> -> Yes, I will.</p></span>
+                <span class="cmnc-headline JSID_body" style="text-align:center;"><p style="padding:20px;font-size:42px;" class="breakinginside"></p></span>
             </h2>
         </div>
         <div class="cmnc-open" style="display: none;">
@@ -426,26 +426,34 @@ _nkconf.ID_BREAKINGNEWS.push([["JSID_baseBreaking_emergency",{"JSID_dataBreaking
 <script src="http://cdnjs.cloudflare.com/ajax/libs/rythm.js/2.2.0/rythm.min.js"></script>
 <script>
 $(function(){
-  $("#JSID_baseBreaking_small").slideDown("slow").on("click", function(){
-    $(this).slideUp();
-    $("#JSID_baseBreaking_normal").slideDown("slow");
+  $("#JSID_baseBreaking_small").slideDown("slow");
+  $(".breakinginside").html('Yes, I do?').on("click", function(e){
+    $(this).html('<s>Yes, I do</s>').on("click", function(e){
+      $(this).html('<s>Yes, I do.</s> -> Yes, I will.').on("click", function(e){
+        $(this).slideUp();
+        $("#JSID_baseBreaking_normal").slideDown("slow");
 
-    $(".cmn-breaking_news").addClass("pulse1");
-    $(".cmn-article_title h3").addClass("rythm-bass");
-    $(".cmn-article_summary").addClass("rythm-medium");
-    $(".cmnc-link_list").addClass("rythm-high");
-    $("#CONTENTS, body").addClass("body_color");
+        $(".cmn-breaking_news").addClass("pulse1");
+        $(".cmn-article_title h3").addClass("rythm-bass");
+        $(".cmn-article_summary").addClass("rythm-medium");
+        $(".cmnc-link_list").addClass("rythm-high");
+        $("#CONTENTS, body").addClass("body_color");
 
-    setTimeout(function(){
-      var rythm = new Rythm();
-      rythm.setMusic("/sample.mp3");
-      rythm.setGain(0.1);
-      rythm.start();
-      rythm.addRythm('body_color', 'color', 0, 10);
-      rythm.addRythm('pulse1', 'pulse', 0, 10);
-    },1500);
+        setTimeout(function(){
+          var rythm = new Rythm();
+          rythm.setMusic("/sample.mp3");
+          rythm.setGain(0.1);
+          rythm.start();
+          rythm.addRythm('body_color', 'color', 0, 10);
+          rythm.addRythm('pulse1', 'pulse', 0, 10);
+        },1500);
 
-  })
+      })
+
+    })
+
+  });
+
 
 })
 </script>
