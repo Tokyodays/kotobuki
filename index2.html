@@ -438,14 +438,23 @@ $(function(){
         $(".cmn-article_summary").addClass("rythm-medium");
         $(".cmnc-link_list").addClass("rythm-high");
         $("#CONTENTS, body").addClass("body_color");
+        $(".cmn-photo_style1").addClass("twist1")
 
         setTimeout(function(){
           var rythm = new Rythm();
           rythm.setMusic("/sample.mp3");
           rythm.setGain(0.1);
           rythm.start();
-          rythm.addRythm('body_color', 'color', 0, 10);
+          rythm.addRythm('body_color', 'color', 0, 10, {
+            from: [255,255,255],
+            to:[230,230,230]
+          });
           rythm.addRythm('pulse1', 'pulse', 0, 10);
+          rythm.addRythm('twist1', 'twist', 0, 10);
+          rythm.addRythm('l-header_title', 'vanish', 0, 10, {
+            reverse: true
+          });
+          rythm.addRythm('pulse1', 'vanish',0,10);
         },1500);
 
       })
@@ -483,7 +492,7 @@ $(function(){
 		<a href="/article/DGXMZO21535740W7A920C1000000/?dg=1" class=""><span class="cmnc-middle">トランプ氏も顔負け　中朝罵り合いの深い溝</span></a><span class="cmn-icon_member">［有料会員限定］</span></h3>
 </div>
 <div class="cmn-photo_style1 cmn-position_right" style="width: 150px;">
-					<a href="/article/DGXMZO21535740W7A920C1000000/?ap=1&amp;dg=1" class=""><img src="/content/pic/20170927/96958A9F889DE0E3E7E1E7E5E6E2E0E4E2EBE0E2E3E5E2E2E2E2E2E2-DSXMZO2153887026092017000001-KB2-5.jpg" width="150" title="中朝の最高レベルの接触は２年前から途絶えている（15年10月、平壌で軍事パレードを並んで見る金正恩氏と中国序列５位の劉雲山氏＝中国中央テレビの映像から）" alt="中朝の最高レベルの接触は２年前から途絶えている（15年10月、平壌で軍事パレードを並んで見る金正恩氏と中国序列５位の劉雲山氏＝中国中央テレビの映像から）" /></a></div><div class="cmn-article_summary">
+					<a href="/article/DGXMZO21535740W7A920C1000000/?ap=1&amp;dg=1" class=""><img src="sample1.jpg" width="150" title="中朝の最高レベルの接触は２年前から途絶えている（15年10月、平壌で軍事パレードを並んで見る金正恩氏と中国序列５位の劉雲山氏＝中国中央テレビの映像から）" alt="中朝の最高レベルの接触は２年前から途絶えている（15年10月、平壌で軍事パレードを並んで見る金正恩氏と中国序列５位の劉雲山氏＝中国中央テレビの映像から）" /></a></div><div class="cmn-article_summary">
 	<p>　北朝鮮の朝鮮労働党委員長、金正恩と米大統領トランプが言葉の応酬を繰り広げている。その陰に隠れながら激しくぶつかっているのが北朝鮮と中国だ。特に北朝鮮側の攻撃は<a href="/article/DGXMZO21535740W7A920C1000000/?dg=1" class="cmnc-continue">…続き</a><span class="cmnc-time">27日</span>
 		</p>
 </div>
@@ -503,7 +512,7 @@ $(function(){
 		<a href="/article/DGXLASFS27H05_X20C17A9000000/?dg=1" class=""><span class="cmnc-middle">小池氏が「希望」結成　民進、合流へ調整</span></a><span class="cmn-icon_movie">［映像あり］</span></h3>
 </div>
 <div class="cmn-photo_style1 cmn-position_right" style="width: 150px;">
-					<a href="/article/DGXLASFS27H05_X20C17A9000000/?ap=1&amp;dg=1" class=""><img src="/content/pic/20170927/96958A9E93819481E0E59AE2E78DE0E5E2EBE0E2E3E5E2E2E2E2E2E2-DSXMZO2158116027092017MM0001-KB2-2.jpg" width="150" title="「希望の党」設立の記者会見で気勢を上げる小池代表（右から３人目）ら（27日午前、東京都新宿区）" alt="「希望の党」設立の記者会見で気勢を上げる小池代表（右から３人目）ら（27日午前、東京都新宿区）" /></a></div><div class="cmn-article_summary">
+					<a href="/article/DGXLASFS27H05_X20C17A9000000/?ap=1&amp;dg=1" class=""><img src="sample2.jpg" width="150" title="「希望の党」設立の記者会見で気勢を上げる小池代表（右から３人目）ら（27日午前、東京都新宿区）" alt="「希望の党」設立の記者会見で気勢を上げる小池代表（右から３人目）ら（27日午前、東京都新宿区）" /></a></div><div class="cmn-article_summary">
 	<p>　小池百合子東京都知事が率いる新党「希望の党」の参加メンバーは27日午前、都内のホテルで結党の記者会見を開き、党の基本方針となる綱領を発表した。小池氏は「寛容な<a href="/article/DGXLASFS27H05_X20C17A9000000/?dg=1" class="cmnc-continue">…続き</a><span class="cmnc-time">13:58更新</span>
 		</p>
 </div>
@@ -523,7 +532,7 @@ $(function(){
 		<a href="/article/DGXLASDZ27HO9_X20C17A9000000/?dg=1&amp;nf=1" class=""><span class="cmnc-middle">欧州勢がしかける車・鉄道の異次元競争</span></a><span class="cmn-icon_member">［有料会員限定］</span></h3>
 </div>
 <div class="cmn-photo_style1 cmn-position_right" style="width: 150px;">
-					<a href="/article/DGXLASDZ27HO9_X20C17A9000000/?ap=1&amp;dg=1&amp;nf=1" class=""><img src="/content/pic/20170927/96958A9E93819688E0E59A9DEB8DE0E5E2EBE0E2E3E5E2E2E2E2E2E2-DSXMZO2159081027092017I00001-KB2-7.jpg" width="150" title="仏独を代表する高速鉄道である仏アルストムの「ＴＧＶ」（左）とシーメンスの「ＩＣＥ」＝ＡＰ" alt="仏独を代表する高速鉄道である仏アルストムの「ＴＧＶ」（左）とシーメンスの「ＩＣＥ」＝ＡＰ" /></a><div class="cmnc-property cmn-clearfix">
+					<a href="/article/DGXLASDZ27HO9_X20C17A9000000/?ap=1&amp;dg=1&amp;nf=1" class=""><img src="sample3.jpg" width="150" title="仏独を代表する高速鉄道である仏アルストムの「ＴＧＶ」（左）とシーメンスの「ＩＣＥ」＝ＡＰ" alt="仏独を代表する高速鉄道である仏アルストムの「ＴＧＶ」（左）とシーメンスの「ＩＣＥ」＝ＡＰ" /></a><div class="cmnc-property cmn-clearfix">
 							<div class="cmnc-credit">ＡＰ</div>
 						</div>
 					</div><div class="cmn-article_summary">
@@ -546,7 +555,7 @@ $(function(){
 		<a href="/article/DGXKASDG14H1V_V10C17A9CC0000/?dg=1&amp;nf=1" class=""><span class="cmnc-middle">寺と檀家、つながり遠のく　不明朗なお布施に嫌気</span></a><span class="cmn-icon_member">［有料会員限定］</span></h3>
 </div>
 <div class="cmn-photo_style1 cmn-position_right" style="width: 150px;">
-					<a href="/article/DGXKASDG14H1V_V10C17A9CC0000/?ap=1&amp;dg=1&amp;nf=1" class=""><img src="/content/pic/20170927/96958A9993819695E3E69AE3848DE3E7E2EBE0E2E3E59191E2E2E2E2-DSXKZO2158409027092017CC0000-KB2-2.jpg" width="150" title="伝統ある寺でも住職のなり手がいない（山梨県上野原市の花岳寺）
+					<a href="/article/DGXKASDG14H1V_V10C17A9CC0000/?ap=1&amp;dg=1&amp;nf=1" class=""><img src="sample4.jpg" width="150" title="伝統ある寺でも住職のなり手がいない（山梨県上野原市の花岳寺）
 " alt="伝統ある寺でも住職のなり手がいない（山梨県上野原市の花岳寺）
 " /></a></div><div class="cmn-article_summary">
 	<p>　村上シン全（しんぜん）さん（38）は山梨県内で８つの寺の住職を兼務している。臨済宗建長寺派寺院「花岳寺」（上野原市）はそのうちの一つ。室町将軍からの信任も厚か<a href="/article/DGXKASDG14H1V_V10C17A9CC0000/?dg=1&amp;nf=1" class="cmnc-continue">…続き</a><span class="cmnc-time">17:24</span>
@@ -784,7 +793,7 @@ $(function(){
 							<span class="cmn-icon_member">［有料会員限定］</span></h5>
 					</div>
 						<div class="m-homepickup_article_image">
-								<a href="/article/DGXMZO21535740W7A920C1000000/?n_cid=DSTPCS019" target="_self"><img src="/content/pic/20170927/96958A9F889DE0E3E7E1E7E5E6E2E0E4E2EBE0E2E3E5E2E2E2E2E2E2-DSXMZO2153887026092017000001-KB2-5.jpg" /></a></div>
+								<a href="/article/DGXMZO21535740W7A920C1000000/?n_cid=DSTPCS019" target="_self"><img src="sample1.jpg" /></a></div>
 						</div>
 			<div class="m-homepickup_article clearfix">
 					<div class="m-homepickup_article_area">
